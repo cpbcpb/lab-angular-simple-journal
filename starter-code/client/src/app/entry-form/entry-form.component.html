@@ -1,0 +1,20 @@
+<div>
+    <h2>Add a new food</h2>
+    <!-- <button (click)="toggleForm()">Add a new Food</button> -->
+    <div class="wholeForm" >
+  
+      <div class="formInput" >
+        <label for="">Title:</label>
+        <input type="text" name="title" id="" [(ngModel)]="theNewJournal.title">
+      </div>
+      <div class="formInput">
+          <label for="">Date:</label>
+          <input type="text" name="date" id="" [(ngModel)]="theNewJournal.date">
+        </div>
+      <div class="formInput">
+          <label for="">Content</label>
+          <input type="text" name="content" id="" [(ngModel)]="theNewJournal.content">
+        </div>     
+        <button (click)="createJournal()">Submit new entry</button>
+    </div>
+  </div>
