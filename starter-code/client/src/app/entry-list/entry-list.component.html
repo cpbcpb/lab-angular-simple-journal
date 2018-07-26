@@ -1,9 +1,10 @@
 <p>
   entry-list works!
 </p>
-
+<app-entry-form></app-entry-form>
 <div *ngFor="let entry of theEntries">
 {{entry.title}}
 {{entry.date}}
+<a [routerLink]="['entries', entry._id]">See Details</a>
 <hr>
 </div>
